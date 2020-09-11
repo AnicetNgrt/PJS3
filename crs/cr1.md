@@ -10,3 +10,5 @@
   - [x] Commits de test par tous les membres
 - [x] Ajout d'un fichier HTML et CSS de base
 - [x] Récupération de l'HTML du site de l'IUT pour référence
+- [x] Ajout d'un fichier d'organisation
+  - [x] prises de notes sur l'agencement du site
