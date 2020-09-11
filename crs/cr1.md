@@ -12,3 +12,6 @@
 - [x] Récupération de l'HTML du site de l'IUT pour référence
 - [x] Ajout d'un fichier d'organisation
   - [x] prises de notes sur l'agencement du site
+- [x] Ajout d'HTML à notre site
+  - [x] ébauche de la structure du site
+  - [ ] ajout de media queries
