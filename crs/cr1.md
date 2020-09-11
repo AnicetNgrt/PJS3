@@ -1,5 +1,6 @@
 # Compte rendu n°1
-### 11/09/2020 11h
+11/09/2020 11h, gr 2020
+Nougaret, Jiang, In, Truong, Guiao
 
 ## Fait Aujourd'hui
 - [x] Réalisation de l'équipe
@@ -14,4 +15,4 @@
   - [x] prises de notes sur l'agencement du site
 - [x] Ajout d'HTML à notre site
   - [x] ébauche de la structure du site
-  - [ ] ajout de media queries
+- [x] Séparation du CSS 
