@@ -198,5 +198,28 @@ ol, ul {
 }
 
 
+.candidature {
+    text-align: center;
+    color: #555555;
+    text-decoration: none;
+    padding-left: 25%;
+    padding-right: 25%;
+}
 
+.titre-de-conteneur{
+    font-size: 250%;
+    color: #747D88;
+    padding-bottom: 25px;
+}
+.article-de-conteneur{
+    text-align: left;
+    font-size: 150%;
+    padding-bottom: 25px;
+}
+
+.separateur{
+    height: 25px;
+    width: 100%;
+    padding-top: 50px;
+}
 
