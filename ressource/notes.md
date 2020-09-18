@@ -6,3 +6,8 @@
 - [ ] Fond Blanc
 - [ ] Logo Centre gauche
 - [ ] Menu deroulant + recherche icone
+### Footer
+- [ ] Fond Rouge
+- [ ] Contact/Site
+- [ ] Liens
+- [ ] Logo/lien https://u-paris.fr/
