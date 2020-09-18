@@ -1,0 +1,202 @@
+/*RESET CSS*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Open Sans, Arial, sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    background:transparent;
+    font-size:100%;
+    vertical-align: baseline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 190px;
+    margin-right: 170px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 25%;
+}
+
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+	white-space: nowrap;
+	color: grey;
+	font-size: 16px;
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid gold;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+	color: black;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.non-deroulant, .deroulant {
+    margin-left: 30px;
+}
+
+.non-deroulant {
+	background-color: orange;
+	padding: 10px !important;
+}
+
+body {
+    color:#666;
+    background-color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size:14px;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+ul {
+    display: block;
+}
+
+#top-header{
+    z-index:100000;
+    color:#fff;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.et_fixed_nav #top-header {
+    top:0;
+    right:0;
+    left:0;
+    height: 40px;
+}
+
+#top-header, #second-menu li ul {
+    background-color: #cf0a2c;
+}
+
+#second-menu {
+    float: right;
+    text-decoration: none;
+}
+
+#second-menu .social-icons {
+    margin-right: 20px;
+}
+
+#top-header .social-icons {
+    display: inline-block;
+    float: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+#top-header, #top-header .container, #top-header .social-icons a {
+    line-height: 1em;
+}
+
+#top-header, .container {
+    padding-top: 0.5em;
+    font-weight: 600;
+}
+
+.container {
+    position:relative;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    text-align: left;
+}
+
+#top-header .social-icons a {
+    font-size: 14px;
+}
+
+#second-menu > ul > li a {
+    display: block;
+    padding-bottom: 0.75em;
+    text-decoration: none;
+    color: white;
+}
+
+#top-header .social-icons li {
+    margin-top: -2px;
+    margin-left: 12px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+#second-nav, #second-nav li{
+    display: inline-block;
+}
+
+#second-nav li {
+    position: relative;
+    text-align: right;
+	margin-right: 15px;
+}
+
+
+
+
