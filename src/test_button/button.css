@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.button_rounded {
+    transition:padding-right 0.3s, padding-left 0.3s;
+    position: relative;
+    top:50px;
+    left:50px;
+
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    border: solid 2px black;
+    border-radius: 100px;
+    /*background-color:red;*/
+    width:max-content;
+}
+
+.button_rounded #label {
+    display:inline-block;
+    /*background-color:yellow;*/
+    width:max-content;
+    font-size:16px;
+}
+
+.button_rounded #arrow {
+    transition:opacity 0.2s, margin-left 2s;
+    position:absolute;
+    left:calc(100% - 2px);
+    top:calc(0% + 8px);
+    margin-left: 0px;
+    opacity: 0;
+    /*background-color:green;*/
+    width:min-content;
+}
+
+.button_rounded:hover {
+    transition: padding-right 0.3s ease-in-out, padding-left 0.3s;
+    padding-left: 10px;
+    padding-right: 34px;
+}
+
+.button_rounded:hover #arrow {
+    transition: opacity 0.2s, margin-left 0.3s;
+    margin-left: -20px;
+    opacity: 1;
+}
