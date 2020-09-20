@@ -1,0 +1,346 @@
+/*RESET CSS*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    background:transparent;
+    font-size:100%;
+    vertical-align: baseline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 190px;
+    margin-right: 170px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 25%;
+}
+
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+	white-space: nowrap;
+    color: rgba(0, 0, 0, 0.6);
+	font-size: 16px;
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid #cf0a2c;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+	color: black;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after{
+    content:" ▽";
+    font-size: 12px;
+}
+
+.non-deroulant, .deroulant {
+    margin-left: 30px;
+}
+
+.non-deroulant {
+    background-color: #eaa903;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: -5px;
+}
+
+.non-deroulant > a:hover{
+    border-bottom: none;
+}
+
+body {
+    color:#666;
+    background-color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size:14px;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+ul {
+    display: block;
+}
+
+#top-header{
+    z-index:100000;
+    color:#fff;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.et_fixed_nav #top-header {
+    top:0;
+    right:0;
+    left:0;
+    height: 40px;
+}
+
+#top-header, #second-menu li ul {
+    background-color: #cf0a2c;
+}
+
+#second-menu {
+    float: right;
+    text-decoration: none;
+}
+
+#second-menu .social-icons {
+    margin-right: 7px;
+}
+
+#top-header .social-icons {
+    display: inline-block;
+    float: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+#top-header, #top-header .container, #top-header .social-icons a {
+    line-height: 1em;
+}
+
+#top-header, .container {
+    padding-top: 0.4em;
+    font-weight: 600;
+}
+
+.container {
+    position:relative;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    text-align: left;
+}
+
+#top-header .social-icons a {
+    font-size: 14px;
+}
+
+#second-menu > ul > li a {
+    display: block;
+    padding-bottom: 0.75em;
+    text-decoration: none;
+    color: white;
+}
+
+#top-header .social-icons li {
+    margin-top: -2px;
+    margin-left: 12px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+#second-nav, #second-nav li{
+    display: inline-block;
+}
+
+#second-nav li {
+    position: relative;
+    text-align: right;
+	margin-right: 15px;
+}
+
+.rentree {
+    display: flex;
+}
+
+#rentree_txt {
+    height: 520px;
+    width: 60%;
+    background-color: #eaa903;  
+}
+
+#amphi {
+    background-image: url("amphi.jpg");
+    background-size: cover;
+    width: 40%;
+    height: 520px;
+}
+
+.candidatures {
+    height: 412px;
+    background-color: grey;
+}
+
+/*diplomes*/
+
+.diplomes {
+    height: 622px;
+    box-sizing: border-box !important;
+    background-color:#eaa903;
+    border: solid red 10px;
+    width: 100% !important;
+    color: #f7f7f7!important;
+}
+
+.diplomes h3 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.3em;
+    padding-left: 2.5em;
+    padding-top: 0.62em;
+    margin-left: 410px;
+    margin-right: 410px;
+    padding: 27px ;
+}
+
+.diplomes a:link, a:visited{
+    text-decoration: none;
+    font-size: 16px;
+    color: #f7f7f7!important;
+    
+}
+
+#content{
+    box-sizing: border-box;
+    height: 380px;
+    border: solid #5B6DCD 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+.colonne{
+    float: left;
+    box-sizing: border-box;
+    width: 287px;
+    padding:30px;
+    border: solid #5bc2dc 10px;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.lastColonne{
+    float: left;
+    box-sizing: border-box;
+    width: 287px;
+    padding:30px;
+    border: solid #5bc2dc 10px;
+    text-align: center;
+}
+
+
+.colonne h4,p{
+    text-align: center;
+}
+
+.actus {
+    height: 926px;
+    background-color: grey;
+}
+
+.chiffres {
+    height: 444px;
+    background-color: #eaa903;
+}
+
+.footer {
+    height: 372px;
+    background-color: #cf0a2c;
+}
+
+#headermenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+#espace {
+    height: 153px;
+}
+
+h1 {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #f7f7f7!important;
+    line-height: 1.3em;
+    padding-left: 2.5em;
+    padding-top: 0.62em;
+}
+
+
+
+.txt_1, .txt_2{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    line-height: 1.8em;
+    margin-bottom: 15px!important;
+    color: black;
+    padding-left: 7.5em;
+    padding-right: 4em;
+    padding-top: 1.25em;
+}
+
