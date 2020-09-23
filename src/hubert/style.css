@@ -1,4 +1,3 @@
-/*RESET CSS*/
 * {
     margin: 0px;
     padding: 0px;
@@ -224,7 +223,7 @@ ol, ul {
 
 .candidatures {
     height: 412px;
-    background-color: grey;
+    background-color: white;
 }
 
 .diplomes {
@@ -234,7 +233,7 @@ ol, ul {
 
 .actus {
     height: 926px;
-    background-color: grey;
+    background-color: white;
 }
 
 .chiffres {
@@ -274,8 +273,69 @@ h1 {
     font-size: 20px;
     line-height: 1.8em;
     margin-bottom: 15px!important;
-    color: black;
+    color: #353740;
     padding-left: 7.5em;
     padding-right: 4em;
     padding-top: 1.25em;
 }
+
+.txt_3 {
+    color: #747D88;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 3em;
+}
+
+h3 {
+    color: #555555;
+    font-size: 22px;
+    padding-left: 10em;
+    padding-top: 2.5em;
+    
+}
+
+.txt_4 {
+    font-family: 'Montserrat',sans-serif;
+    font-size:36px;
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.diplomes_icones a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+}
+
+.diplomes_icones p{
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    padding-bottom: 1em;
+    font-weight: inherit;
+}
+
+.diplomes_icones {
+    display: flex;
+    text-align: center;
+    padding-top: 5.5%;
+    justify-content: space-evenly;
+}
+
+.dut, .du, .licence, .master {
+    width: 15%;
+}
+
+.txt_5 {
+    font-family: 'Montserrat',sans-serif;
+    font-size:36px;
+    color:#747D88;
+    text-align: center;
+    padding: 3.5em; 
+}
+
