@@ -244,6 +244,7 @@ ol, ul {
 .footer {
     height: 372px;
     background-color: #cf0a2c;
+    color: white;
 }
 
 #headermenu {
@@ -337,5 +338,15 @@ h3 {
     color:#747D88;
     text-align: center;
     padding: 3.5em; 
+}
+
+h4 {
+    font-size: 19px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.bloc {
+    display: flex;
+    padding-top: 4.25em;
 }
 
