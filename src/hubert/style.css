@@ -343,6 +343,8 @@ h3 {
 h4 {
     font-size: 19px;
     font-family: 'Open Sans', Arial, sans-serif;
+    padding-bottom: 14px;
+    font-weight: normal;
 }
 
 .bloc {
@@ -350,3 +352,28 @@ h4 {
     padding-top: 4.25em;
 }
 
+#art1 a {
+    text-decoration: none;
+    color: #555555;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.iutchiffres {
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+.acces {
+    padding-right:17%;
+}
+
+.paris {
+    padding-left:14%;
+    padding-right: 14%;
+}
