@@ -211,7 +211,11 @@ ol, ul {
 #rentree_txt {
     height: 520px;
     width: 60%;
-    background-color: #eaa903;  
+    background-color: #eaa903;
+    background-image: url("fondjaunelogo.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #amphi {
@@ -317,8 +321,8 @@ h3 {
     color: white;
     font-size: 16px;
     font-family: 'Montserrat',sans-serif;
-    padding-bottom: 1em;
-    font-weight: inherit;
+    padding-top: 1em;
+    font-weight: normal;
 }
 
 .diplomes_icones {
@@ -352,13 +356,36 @@ h4 {
     padding-top: 4.25em;
 }
 
-#art1 a {
+.articles {
+    display: flex;
+    padding-left: 5%;
+    justify-content: space-evenly;
+}
+
+#art1 a, #art2 a, #art3 a {
     text-decoration: none;
     color: #555555;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 18px;
-    border: 1px solid black;
     font-weight: bold;
+}
+
+#art1 {
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    width: 300px;
+}
+
+#art2 {
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    width: 400px;
+}
+
+#art3 {
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    width: 300px;
 }
 
 .iutchiffres {
