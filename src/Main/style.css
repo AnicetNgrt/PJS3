@@ -398,9 +398,15 @@ h4 {
 
 .acces {
     padding-right:17%;
+	color: #FFFFFF;
 }
 
 .paris {
     padding-left:14%;
     padding-right: 14%;
+}
+
+.acces a {
+	text-decoration: none;
+	color: #FFFFFF;
 }
