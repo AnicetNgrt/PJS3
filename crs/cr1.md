@@ -1,10 +1,4 @@
-# Compte rendu n°1
-11/09/2020 11h, gr 2020
-Nougaret, Jiang, In, Truong, Guiao
-
-## Fait Aujourd'hui
-- [x] Réalisation de l'équipe
-- [x] Etude préliminaire du site de l'IUT
+site de l'IUT
 - [x] Mise en place du GitHub
 - [x] Topo sur l'utilisation de git pour toute l'équipe
   - [x] Installation de git par tous les membres
