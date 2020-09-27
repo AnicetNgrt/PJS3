@@ -305,14 +305,14 @@ h3 {
 .txt_4 {
     font-family: 'Montserrat',sans-serif;
     font-size:36px;
-    color: white;
+    color: #666;
     text-align: center;
     padding-top: 3em;
 }
 
 .diplomes_icones a{
     text-decoration: none;
-    color: white;
+    color: #666;
     font-size: 22px;
     font-family: 'Montserrat',sans-serif;
     font-weight: bold;
@@ -321,7 +321,7 @@ h3 {
 .diplomes_icones p{
     flex-wrap: wrap;
     flex-direction: row;
-    color: white;
+    color: #666;
     font-size: 16px;
     font-family: 'Montserrat',sans-serif;
     padding-top: 1em;
@@ -392,7 +392,7 @@ h4 {
 }
 
 .iutchiffres {
-    color: white;
+    color: #666;
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
