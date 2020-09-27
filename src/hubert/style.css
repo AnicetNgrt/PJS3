@@ -267,7 +267,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 60px;
-    color: #f7f7f7!important;
+    color: #f7f7f7;
     line-height: 1.3em;
     padding-left: 2.5em;
     padding-top: 0.62em;
@@ -403,4 +403,57 @@ h4 {
 .paris {
     padding-left:14%;
     padding-right: 14%;
+}
+
+
+/*MEDIA QUERIES RESPONSIVE*/
+@media (max-width: 980px) {
+    .footer{
+        height: 537px;
+    }
+    .bloc {
+      display: inline-block;  
+      flex-direction: column; 
+      padding-top: 1.75em;  
+    }
+    h4 {
+        padding-bottom: 10px;
+    }
+    .paris {
+        padding-left: 10%;
+    }
+    .acces {
+        padding-left: 10%;
+        padding-top: 1.5em;
+    }
+    .chiffres, .diplomes{
+        background-color: white;
+    }
+    .rentree {
+        background-color: white;
+    }
+    h1 {
+        font-size: 30px;
+        color:#555555;
+        padding-bottom: 10px;
+        padding-top: 0;
+        padding-left: 1em;
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+    .txt_1, .txt_2{
+        padding-left: 2.25em;
+        padding-right: 0;
+        font-size: 14px;
+        padding-top: 0;
+        color:#666666 ;
+    }
+
+    .rentree #amphi{
+        display: none;
+    }
+    .rentree #rentree_txt{
+        background-color: white;
+        background-image: none;
+    }
 }
