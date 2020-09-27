@@ -1,4 +1,3 @@
-/*RESET CSS*/
 * {
     margin: 0px;
     padding: 0px;
@@ -212,7 +211,11 @@ ol, ul {
 #rentree_txt {
     height: 520px;
     width: 60%;
-    background-color: #eaa903;  
+    background-color: #eaa903;
+    background-image: url("fondjaunelogo.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #amphi {
@@ -224,79 +227,17 @@ ol, ul {
 
 .candidatures {
     height: 412px;
-    background-color: grey;
+    background-color: white;
 }
-
-/*diplomes*/
 
 .diplomes {
     height: 622px;
-    box-sizing: border-box !important;
     background-color:#eaa903;
-    border: solid red 10px;
-    width: 100% !important;
-    color: #f7f7f7!important;
-}
-
-.diplomes h3 {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 100;
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.3em;
-    padding-left: 2.5em;
-    padding-top: 0.62em;
-    margin-left: 410px;
-    margin-right: 410px;
-    padding: 27px ;
-}
-
-.diplomes a:link, a:visited{
-    text-decoration: none;
-    font-size: 16px;
-    color: #f7f7f7!important;
-    
-}
-
-#content{
-    box-sizing: border-box;
-    height: 380px;
-    border: solid #5B6DCD 5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 80px;
-    padding-left: 80px;
-    margin-left: 190px;
-    margin-right: 190px;
-}
-
-.colonne{
-    float: left;
-    box-sizing: border-box;
-    width: 287px;
-    padding:30px;
-    border: solid #5bc2dc 10px;
-    text-align: center;
-    margin-right: 60px;
-}
-
-.lastColonne{
-    float: left;
-    box-sizing: border-box;
-    width: 287px;
-    padding:30px;
-    border: solid #5bc2dc 10px;
-    text-align: center;
-}
-
-
-.colonne h4,p{
-    text-align: center;
 }
 
 .actus {
     height: 926px;
-    background-color: grey;
+    background-color: white;
 }
 
 .chiffres {
@@ -307,6 +248,7 @@ ol, ul {
 .footer {
     height: 372px;
     background-color: #cf0a2c;
+    color: white;
 }
 
 #headermenu {
@@ -331,16 +273,140 @@ h1 {
     padding-top: 0.62em;
 }
 
-
-
 .txt_1, .txt_2{
     font-family: 'Montserrat',sans-serif;
     font-size: 20px;
     line-height: 1.8em;
     margin-bottom: 15px!important;
-    color: black;
+    color: #353740;
     padding-left: 7.5em;
     padding-right: 4em;
     padding-top: 1.25em;
 }
 
+.txt_3 {
+    color: #747D88;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 3em;
+}
+
+h3 {
+    color: #555555;
+    font-size: 22px;
+    padding-left: 10em;
+    padding-top: 2.5em;
+    
+}
+
+.txt_4 {
+    font-family: 'Montserrat',sans-serif;
+    font-size:36px;
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.diplomes_icones a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+}
+
+.diplomes_icones p{
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    padding-top: 1em;
+    font-weight: normal;
+}
+
+.diplomes_icones {
+    display: flex;
+    text-align: center;
+    padding-top: 5.5%;
+    justify-content: space-evenly;
+}
+
+.dut, .du, .licence, .master {
+    width: 15%;
+}
+
+.txt_5 {
+    font-family: 'Montserrat',sans-serif;
+    font-size:36px;
+    color:#747D88;
+    text-align: center;
+    padding: 3.5em; 
+}
+
+h4 {
+    font-size: 19px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding-bottom: 14px;
+    font-weight: normal;
+}
+
+.bloc {
+    display: flex;
+    padding-top: 4.25em;
+}
+
+.articles {
+    display: flex;
+    padding-left: 5%;
+    justify-content: space-evenly;
+}
+
+#art1 a, #art2 a, #art3 a {
+    text-decoration: none;
+    color: #555555;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#art1 {
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    width: 300px;
+}
+
+#art2 {
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    width: 400px;
+}
+
+#art3 {
+    padding: 19px;
+    border: 1px solid #d8d8d8;
+    width: 300px;
+}
+
+.iutchiffres {
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+.acces {
+    padding-right:17%;
+	color: #FFFFFF;
+}
+
+.paris {
+    padding-left:14%;
+    padding-right: 14%;
+}
+
+.acces a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
