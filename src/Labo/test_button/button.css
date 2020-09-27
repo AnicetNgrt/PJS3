@@ -6,7 +6,7 @@
 
 .button_rounded {
     transition:padding-right 0.3s, padding-left 0.3s;
-    position: relative;
+    position: fixed;
     top:50px;
     left:50px;
 
