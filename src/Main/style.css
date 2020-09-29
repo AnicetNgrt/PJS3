@@ -410,7 +410,7 @@ h4 {
     padding-right: 14%;
 }
 
-.actus a  {
+.actus .lien_actu  {
     text-decoration: none;
     color: #555555;
 }
@@ -530,6 +530,19 @@ h4 {
     margin-top: 40px;
 
     border: solid 2px #eaa903;
+    color: #eaa903;
+}
+
+.actus .button_rounded {
+    margin-left: calc(50vw - 155px);
+    margin-top: 40px;
+
+    color: #eaa903;
+    border: solid 2px #eaa903;
+}
+
+.actus .button_rounded a {
+    text-decoration: none;
     color: #eaa903;
 }
 
