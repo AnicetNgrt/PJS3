@@ -126,6 +126,7 @@ ul {
     color:#fff;
     font-size: 12px;
     line-height: 13px;
+    z-index: 10;
 }
 
 .et_fixed_nav #top-header {
@@ -266,11 +267,11 @@ h1 {
     font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 3.5vw;
     color: #f7f7f7!important;
     line-height: 1.3em;
-    padding-left: 2.5em;
-    padding-top: 0.62em;
+    padding-left: 12%;
+    padding-top: 1vw;
 }
 
 .txt_1, .txt_2{
@@ -279,9 +280,10 @@ h1 {
     line-height: 1.8em;
     margin-bottom: 15px!important;
     color: #353740;
-    padding-left: 7.5em;
-    padding-right: 4em;
-    padding-top: 1.25em;
+    padding-left: 8.5vw;
+    padding-right: 8vw;
+    padding-top: 1em;
+    line-height: 30px;
 }
 
 .txt_3 {
@@ -294,7 +296,7 @@ h1 {
 h3 {
     color: #555555;
     font-size: 22px;
-    padding-left: 10em;
+
     padding-top: 2.5em;
     
 }
@@ -332,9 +334,6 @@ h3 {
     justify-content: space-evenly;
 }
 
-.dut, .du, .licence, .master {
-    width: 15%;
-}
 
 .txt_5 {
     font-family: 'Montserrat',sans-serif;
@@ -362,12 +361,16 @@ h4 {
     justify-content: space-evenly;
 }
 
-#art1 a, #art2 a, #art3 a {
+.titrearticle {
     text-decoration: none;
     color: #555555;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
+    padding-left: 5%;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #CF0A2C;
 }
 
 #art1 {
@@ -376,10 +379,9 @@ h4 {
     width: 300px;
 }
 
-#art2 {
+#art2{
     padding: 19px;
-    border: 1px solid #d8d8d8;
-    width: 400px;
+    width: 300px;
 }
 
 #art3 {
@@ -398,7 +400,6 @@ h4 {
 
 .acces {
     padding-right:17%;
-	color: #FFFFFF;
 }
 
 .paris {
@@ -406,7 +407,155 @@ h4 {
     padding-right: 14%;
 }
 
-.acces a {
-	text-decoration: none;
-	color: #FFFFFF;
+.actus a  {
+    text-decoration: none;
+    color: #555555;
+}
+
+#lireplus {
+    text-decoration: none;
+    color: #cf0a2c;
+}
+
+.bloc2 {
+    border: 1px solid #d8d8d8;
+}
+
+.bloc2 img{
+    width: fit-content;
+}
+
+.chiffres {
+    max-width: 100vw;
+    padding-bottom: 20px;
+    background-color: #eaa903;
+}
+
+#chiffres_columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100vw;
+    margin-top: 100px;
+    padding-top: 0;
+}
+
+.chiffre_container {
+    width: 200px;
+    margin-right: 75px;
+}
+
+.chiffre_container:last-child {
+    margin-right: 0px;
+}
+
+.chiffre {
+    color: white;
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.chiffre_label {
+    color: rgb(30, 30, 36);
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.white_title {
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.candidatures_txt h3 {
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.button_rounded {
+    transition:padding-right 0.3s, padding-left 0.3s;
+    display: flex;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    border-radius: 100px;
+    width:max-content;
+    z-index: 1;
+}
+
+.button_rounded #label {
+    display:inline-block;
+    /*background-color:yellow;*/
+    width:max-content;
+    font-size:16px;
+    letter-spacing: 2px;
+}
+
+.button_rounded #arrow {
+    transition:opacity 0.2s, margin-left 2s;
+    margin-left: 0px;
+    opacity: 0;
+    width:min-content;
+}
+
+.button_rounded:hover {
+    transition: padding-right 0.3s ease-in-out, padding-left 0.3s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button_rounded:hover #arrow {
+    transition: opacity 0.2s, margin-left 0.3s;
+    margin-left: 5px;
+    opacity: 1;
+}
+
+.candidatures .button_rounded {
+    margin-left: calc(50vw - 135px);
+    margin-top: 40px;
+
+    border: solid 2px #eaa903;
+    color: #eaa903;
+}
+
+.candidatures a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.rentree .button_rounded {
+    margin-left: 8.5vw;
+    left: 8em;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.rentree a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.dut, .du, .licence, .master {
+    width: 15%;
+}
+
+.dutMO, .duMO, .licenceMO, .masterMO {
+    display: none;
+}
+
+.dutPC, .duPC, .licencePC, .masterPC {
+    display: inline;
 }

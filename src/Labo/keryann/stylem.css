@@ -335,6 +335,13 @@ h3 {
     justify-content: space-evenly;
 }
 
+.dutMO, .duMO, .licenceMO, .masterMO {
+    display: inline;
+}
+.dutPC, .duPC, .licencePC, .masterPC {
+    display: none;
+}
+
 .dut, .du, .licence, .master {
     width: 15%;
 }
