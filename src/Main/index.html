@@ -9,7 +9,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
+        <!-- <p class="iutchiffres">L'IUT de Paris en chiffres</p>
+        <div class="chiffres"> -->
+            <script>
+                /*
+                    Script pour l'animation des chiffres
+                */
+                var discovered = false;
+                var values = [3000, 1100, 170, 750, 84];
+        
+                // animation des valeurs de façon recursive
+                function roll(id, val) {
+                    var element = document.getElementById('chiffre_'+id);
+                    if(val > values[id]) {
+                        element.innerHTML = values[id];
+                        return;
+                    }
+                    element.innerHTML = Math.floor(val);
+                    setTimeout((id, val)=>{
+                        roll(id, val+(values[id]/50));
+                    }, 25, id, val);
+                }
+                
+                // détection du scroll
+                window.addEventListener('scroll', function() {
+                    var element = document.getElementById("chiffres_trigger");
+                    var position = element.getBoundingClientRect();
+        
+                    if(position.top < window.innerHeight && position.bottom >= 0) {
+                        if(!discovered) {
+                            discovered = true;
+                            for(let i = 0; i < 5; i++) {
+                                setTimeout((id, val)=>{
+                                    roll(id, val+(values[id]/50));
+                                }, 300, i, 0);
+                            }
+                        }
+                    }
+                });
+            </script>
 
 <body class="et_fixed_nav">
 
@@ -112,9 +150,42 @@
     <div class="rentree">
         <div id="rentree_txt">
             <h1>RENTRÉE 2020</h1>
-            <p class="txt_1">Futur.e étudiant.e de l’IUT de Paris ? Consultez les modalités d’inscription administrative et les plannings de rentrée</p>
-            <p class="txt_2">Guide de survie, plan d’orientation, trésor de ressources, le livret de l’étudiant de l’IUT vous dira tout ce dont vous avez besoin pour utiliser au mieux les équipements et les services.</p>
+            <p class="txt_1">Futur.e étudiant.e de l’IUT de Paris ? Consultez les modalités d’inscription administrative
+                 et les plannings de rentrée</p>
+                 <div class="button_rounded">
 
+                    <p id="label">
+                        <a href="https://www.iut.parisdescartes.fr/rentree-2020-inscriptions-et-dates-a-retenir/"><b>PLUS
+                                D'INFORMATIONS</b></a>
+                    </p>
+                    <div id="arrow">
+                        ▸
+                    </div>
+    
+                </div>
+            <p class="txt_2">Guide de survie, plan d’orientation, trésor de ressources, le livret de l’étudiant
+                 de l’IUT vous dira tout ce dont vous avez besoin pour utiliser au mieux les équipements et les services.</p>
+                 <div class="button_rounded">
+
+                    <p id="label">
+                        <a href="https://fr.calameo.com/read/001216876217f89f636f2"><b>LIVRET L'ÉTUDIANT DE L'IUT</b></a>
+                    </p>
+                    <div id="arrow">
+                        ▸
+                    </div>
+    
+                </div>
+                <br>
+                <div class="button_rounded">
+    
+                    <p id="label">
+                        <a href="https://www.iut.parisdescartes.fr/covid-19/"><b>COVID-19</b></a>
+                    </p>
+                    <div id="arrow">
+                        ▸
+                    </div>
+    
+                </div>
 
         </div>
         <div id="amphi"></div>
@@ -123,9 +194,23 @@
     <div class="candidatures">
         <div class="candidatures_txt">
             <p class="txt_3">Candidatures 2020-2021</p>
-            <h3>Les calendriers de candidature pour les DUT, Licences Professionnelles, Licences 3, Master, Passerelle DEASS et DU sont en ligne !</h3>
+        
+            <h3>Les calendriers de candidature pour les DUT,
+                Licences Professionnelles, Licences 3, Master, Passerelle DEASS et DU sont en ligne !</h3>
+        </div>
+        <div class="button_rounded">
+
+            <p id="label">
+                <a href="https://www.iut.parisdescartes.fr/candidater/"><b>PLUS
+                        D'INFORMATIONS</b></a>
+            </p>
+            <div id="arrow">
+                ▸
+            </div>
+
         </div>
     </div>
+    
 
     <div class="diplomes">
         <div clasee="diplomes_txt">
@@ -163,25 +248,68 @@
         <p class="txt_5">Actualités</p>
         <div class="articles">
             <article id="art1">
+                <div class="titrearticle">
                 <a href="https://www.iut.parisdescartes.fr/rentree-2020-inscriptions-et-dates-a-retenir/">Rentrée 2020 : inscriptions et dates à retenir</a>
+                </div>
+                 <br>
+                <a href="https://www.iut.parisdescartes.fr/category/iut/"> IUT </a> <br>
+                Inscriptions administratives   Les inscriptions administratives à l'IUT de Paris auront lieu du
+                 15 juillet au 24 juillet 2020 pour les DUT, Licences professionneslles et Licences 3
+                 en formation initiale, et à compter du 24 août 2020 pour toutes les autres...
+                 <br> <a id="lireplus" href="https://www.iut.parisdescartes.fr/rentree-2020-inscriptions-et-dates-a-retenir/">Lire plus</a> <br>
             </article>
             <div class="bloc2">
-            <img src="biblio.jpg">
-            <article id="art2">              
-                <a href="https://www.iut.parisdescartes.fr/reouverture-bibliotheque/">Réouverture de la bibliothèque de l’IUT !</a>
-            </article>
+                <img src="biblio.jpg"> 
+                <article id="art2">    
+                    <div class="titrearticle">
+                        <a  href="https://www.iut.parisdescartes.fr/reouverture-bibliotheque/">Réouverture de la bibliothèque de l’IUT !</a>
+                    </div>                         
+                     <br> <a href="https://www.iut.parisdescartes.fr/category/iut/"> IUT </a> <br>
+    aux horaires habituels de 9h à 19h du lundi au vendredi.
+    Néanmoins, étant donné le contexte actuel, des mesures spécifiques ont été mises en place pour la réouverture : 41 places...
+                    <br> <a id="lireplus" href="https://www.iut.parisdescartes.fr/reouverture-bibliotheque/">Lire plus</a> <br>
+                </article>
             </div>
             <article id="art3">
+                <div class="titrearticle">
                 <a href="https://www.iut.parisdescartes.fr/examens-2020/">Examens 2020 : les dates à retenir</a>
+                </div>
+                 <br> <a href="https://www.iut.parisdescartes.fr/category/iut/"> IUT </a> <br>
+                Voici les dates d'examens à retenir pour l'année 2020 de la filière CCA : Ces dates sont connues par les étudiant.e.s
+                 depuis le 6 mai L3 CCA formation initiale Droit des sociétés, enseignant.e : CHAMBOREDON Date :
+                  2 juin Horaire : 9h30 - 11h30 Contrôle long Droit du... 
+                  <br> <a id="lireplus" href="https://www.iut.parisdescartes.fr/examens-2020/">Lire plus</a> <br>
             </article>
         </div>
     </div>
 
-    <div class="chiffres">
-        <p class="iutchiffres">L'IUT de Paris en chiffres</p>
-        <div class="chiffres">
-
-        </div>
+    <div class="chiffres" style="" id="chiffres_trigger">
+        <!-- <p class="iutchiffres">L'IUT de Paris en chiffres</p>
+        <div class="chiffres"> -->
+            
+                <p class="white_title">L'IUT de Paris en chiffres</p>
+                <div id="chiffres_columns">
+                    <div class="chiffre_container">
+                        <p class="chiffre" id="chiffre_0">0</p>
+                        <p class="chiffre_label" id="label_0">ETUDIANTS</p>
+                    </div>
+                    <div class="chiffre_container">
+                        <p class="chiffre" id="chiffre_1">0</p>
+                        <p class="chiffre_label" id="label_1">APPRENTIS ET STAGIAIRES DE FORMATION CONTINUE</p>
+                    </div>
+                    <div class="chiffre_container">
+                        <p class="chiffre" id="chiffre_2">0</p>
+                        <p class="chiffre_label" id="label_2">ENSEIGNANTS ET ENSEIGNANTS-CHERCHEURS</p>
+                    </div>
+                    <div class="chiffre_container">
+                        <p class="chiffre" id="chiffre_3">0</p>
+                        <p class="chiffre_label" id="label_3">INTERVENANTS PROFESSIONNELS</p>
+                    </div>
+                    <div class="chiffre_container">
+                        <p class="chiffre" id="chiffre_4">0</p>
+                        <p class="chiffre_label" id="label_4">PERSONNELS ADMINISTRATIFS ET TECHNIQUES</p>
+                    </div>
+                </div>
     </div>
 
     <div class="footer">
@@ -194,15 +322,15 @@
                     <br/>Tél. : +33 1 76 53 47 00
                     <br/> Fax : +33 1 45 25 70 75                  
                     </p><br/>
-                <p><strong>Site Pajol<br />
-					</strong>20 rue du Département<strong><br />
-					</strong>75018 Paris</p>
+                <p><strong>Site Pajol</strong>
+                <br/>20 rue du Département
+                <br/>75018 Paris</p>
             </div>
             <div class="acces">
                 <h4>Accès directs</h4>
-                   <p><a href="https://www.iut.parisdescartes.fr/acces-et-contact/">Accès et contacts</a><br />
-						<a href="https://www.iut.parisdescartes.fr/notre-projet/">Le projet de l&#8217;IUT</a><br />
-						<a href="/politique-de-confidentialite/">Mentions légales</a></p>
+                   <p> Accès et contacts
+                    <br/>Le projet de l’IUT
+                    <br/>Mentions légales</p>
             </div>
             <div class="iutparislogo">
                 <img src="logoiutparis.png">
