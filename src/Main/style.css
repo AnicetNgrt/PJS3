@@ -268,7 +268,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 3.5vw;
-    color: #f7f7f7!important;
+    color: #f7f7f7;
     line-height: 1.3em;
     padding-left: 12%;
     padding-top: 1vw;
@@ -605,12 +605,44 @@ h4 {
         padding-top: 0;
         color:#666666 ;
     }
-
     .rentree #amphi{
         display: none;
     }
     .rentree #rentree_txt{
         background-color: white;
         background-image: none;
+    }
+    .articles{
+        display: inline-block;
+        padding-left: 10%;
+    }
+    #art1, #art3{
+        width: 402px;
+    }
+    #art1, #art2{
+        margin-bottom: 3em;
+    }
+    .actus{
+        height: 1532px;
+    }
+    .chiffres{
+        height: 834px;
+    }
+    .chiffre {
+        color:black;
+        text-align: center;
+    }
+    .white_title{
+        color : black;
+    }
+    .chiffre_container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .candidatures{
+        height: 500px;
+    }
+    .txt_4 {
+        color:#747D88;
     }
 }
