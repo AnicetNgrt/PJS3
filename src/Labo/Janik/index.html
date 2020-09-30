@@ -49,6 +49,18 @@
                 });
             </script>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
 <body class="et_fixed_nav">
 
     <div id="espace"></div>
@@ -82,7 +94,7 @@
         </div>      
     
     <header>
-        <nav>         
+        <nav class="topnav" id="myTopnav">         
             <ul>
                 <div class="logo-iut">
                     <img src="https://www.iut.parisdescartes.fr/wp-content/uploads/sites/3/2018/07/logo_iut-paris-descartes.png" class="logo">
@@ -142,6 +154,9 @@
 
                 <li class="non-deroulant"><a href="#">Covid-19</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
 
     </header>
