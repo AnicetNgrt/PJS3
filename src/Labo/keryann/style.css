@@ -242,8 +242,9 @@ ol, ul {
 }
 
 .chiffres {
-    height: 444px;
+    box-sizing: border-box;
     background-color: #eaa903;
+	
 }
 
 .footer {
@@ -267,11 +268,10 @@ h1 {
     font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3.5vw;
+    font-size: 60px;
     color: #f7f7f7!important;
     line-height: 1.3em;
     padding-left: 12%;
-    padding-top: 1vw;
 }
 
 .txt_1, .txt_2{
@@ -280,7 +280,7 @@ h1 {
     line-height: 1.8em;
     margin-bottom: 15px!important;
     color: #353740;
-    padding-left: 8.5vw;
+    padding-left: 12%;
     padding-right: 8vw;
     padding-top: 1em;
     line-height: 30px;
@@ -493,8 +493,15 @@ h4 {
     border-radius: 100px;
     width:max-content;
     z-index: 1;
+	margin-left: 33%;
 }
-
+.covid .button_rounded {
+	margin-top: 20px!important;
+}
+#rentree_txt .button_rounded  {
+		border: solid 2px white;
+		margin-left:12%!important;
+}
 .button_rounded #label {
     display:inline-block;
     /*background-color:yellow;*/
