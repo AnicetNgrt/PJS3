@@ -558,6 +558,11 @@ h4 {
     text-decoration: none;
 }
 
+.icones {
+    display: none;
+}
+
+
 /*MEDIA QUERIES RESPONSIVE*/
 @media (max-width: 980px) {
     .footer{
@@ -730,4 +735,16 @@ h4 {
         text-decoration: none;
         color: #cf0a2c;
     }
+
+    .topnav li{
+        display: none;
+    }
+
+    #top-header {
+        display: none;
+    }
+    .icones{
+        display : block
+    }
+
 }
