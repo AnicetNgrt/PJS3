@@ -747,4 +747,13 @@ h4 {
         display : block
     }
 
+    .iutparislogo {
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+
+    .bloc {
+        padding-left: 7%;
+    }
+
 }
