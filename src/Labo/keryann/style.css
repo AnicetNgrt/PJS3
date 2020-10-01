@@ -219,6 +219,10 @@ ol, ul {
     background-position: center;
 }
 
+#rentree_txt h1{
+    padding-top: 0.4em;
+}
+
 #amphi {
     background-image: url("amphi.jpg");
     background-size: cover;
@@ -354,7 +358,9 @@ h4 {
     display: flex;
     padding-top: 4.25em;
 }
-
+.icones {
+	display:none;
+}
 .articles {
     display: flex;
     padding-left: 5%;
