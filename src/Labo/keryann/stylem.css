@@ -215,7 +215,7 @@ ol, ul {
 }
 
 #rentree_txt {
-	height:0;
+	height: auto;
     box-sizing: border-box;
     width: 100%;
 	background-color: white;
@@ -236,13 +236,13 @@ ol, ul {
 }
 
 .candidatures {
-	
+	height: auto;
     box-sizing: border-box;
     background-color: white;
 }
 
 .diplomes {
-	height:700px;
+	height: auto;
     box-sizing: border-box;
     background-color: white;
 }
@@ -250,22 +250,33 @@ ol, ul {
 .actus {
 	display: inline-block;
     box-sizing: border-box;
-	
+	height: auto;
     background-color: white;
 }
 
 .chiffres {
-
+	height: auto;
     box-sizing: border-box;
     background-color: white;
-	display: inline-block;
+	display: block;
 	max-width: 100%;
+		margin: auto;
 	color:#555555;
+}
+
+.chiffre_container {
+    width: 45%;
+    margin-right: auto;
+	margin-left: auto;
+	float: left;
+    position: relative;
+	z-index: 9;
+	margin-bottom: 30px;
 }
 
 .footer {
 	display: block;
-    height: 537px;
+    height: auto;
     background-color: #cf0a2c;
     color: white;
 }
@@ -452,32 +463,51 @@ h4 {
 }
 
 #chiffres_columns {
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    margin-top: 100px;
-    padding-top: 0;
+    padding-bottom: 30px;
+    margin:  0 30px;
+    padding-top: 30px;
 	
 }
 
 .white_title {
-	max-width: 40%;
+	max-width: 50%;
     color: #666;
     font-size: 14px;
     font-family: "Open Sans", Arial, sans-serif;
     text-align: center;
 	line-height: 1.7em;
 	font-weight: 500;
+	margin: auto;
 }
 
 .chiffre {
     color: #666666;
+
     font-size: 56px;
     margin-bottom: 40px;
+    font-weight: 500;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+.chiffre_label {
+    color: #555;
+    font-size: 18px;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.bloc {
+    display: flex;
+    padding-top: 4.25em;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 80px;
 }
 
 .button_rounded {
