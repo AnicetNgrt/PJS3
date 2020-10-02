@@ -3,12 +3,12 @@
     padding: 0px;
     font-family: 'Open Sans', Arial, sans-serif;
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    background:transparent;
-    font-size:100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 100%;
     vertical-align: baseline;
 }
 
@@ -36,24 +36,24 @@ nav ul li {
     width: 25%;
 }
 
-nav ul::after{
-    content:"";
+nav ul::after {
+    content: "";
     display: table;
     clear: both;
 }
 
-nav a{
+nav a {
     display: block;
     text-decoration: none;
     color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
-	white-space: nowrap;
+    white-space: nowrap;
     color: rgba(0, 0, 0, 0.6);
-	font-size: 16px;
+    font-size: 16px;
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
     border-bottom: 2px solid #cf0a2c;
 }
@@ -64,35 +64,36 @@ nav a:hover{
     background-color: white;
     position: absolute;
     z-index: 1000;
-	color: black;
+    color: black;
 }
 
-nav > ul li:hover .sous{
+nav>ul li:hover .sous {
     display: block;
 }
 
-.sous li{
+.sous li {
     float: none;
     width: 100%;
     text-align: left;
 }
 
-.sous a{
+.sous a {
     padding: 10px;
     border-bottom: none;
 }
 
-.sous a:hover{
+.sous a:hover {
     border-bottom: none;
     background-color: rgba(200, 200, 200, 0.1);
 }
 
-.deroulant > a::after{
-    content:" ▽";
+.deroulant>a::after {
+    content: " ▽";
     font-size: 12px;
 }
 
-.non-deroulant, .deroulant {
+.non-deroulant,
+.deroulant {
     margin-left: 30px;
 }
 
@@ -104,15 +105,15 @@ nav > ul li:hover .sous{
     padding-top: -5px;
 }
 
-.non-deroulant > a:hover{
+.non-deroulant>a:hover {
     border-bottom: none;
 }
 
 body {
-    color:#666;
+    color: #666;
     background-color: #fff;
     font-family: "Open Sans", Arial, sans-serif;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.7em;
 }
@@ -121,22 +122,23 @@ ul {
     display: block;
 }
 
-#top-header{
-    z-index:100000;
-    color:#fff;
+#top-header {
+    z-index: 100000;
+    color: #fff;
     font-size: 12px;
     line-height: 13px;
     z-index: 10;
 }
 
 .et_fixed_nav #top-header {
-    top:0;
-    right:0;
-    left:0;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 40px;
 }
 
-#top-header, #second-menu li ul {
+#top-header,
+#second-menu li ul {
     background-color: #cf0a2c;
 }
 
@@ -154,21 +156,25 @@ ul {
     float: none;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-#top-header, #top-header .container, #top-header .social-icons a {
+#top-header,
+#top-header .container,
+#top-header .social-icons a {
     line-height: 1em;
 }
 
-#top-header, .container {
+#top-header,
+.container {
     padding-top: 0.4em;
     font-weight: 600;
 }
 
 .container {
-    position:relative;
+    position: relative;
     width: 80%;
     max-width: 1080px;
     margin: auto;
@@ -179,7 +185,7 @@ ol, ul {
     font-size: 14px;
 }
 
-#second-menu > ul > li a {
+#second-menu>ul>li a {
     display: block;
     padding-bottom: 0.75em;
     text-decoration: none;
@@ -195,14 +201,15 @@ ol, ul {
     display: inline-block;
 }
 
-#second-nav, #second-nav li{
+#second-nav,
+#second-nav li {
     display: inline-block;
 }
 
 #second-nav li {
     position: relative;
     text-align: right;
-	margin-right: 15px;
+    margin-right: 15px;
 }
 
 .rentree {
@@ -213,37 +220,45 @@ ol, ul {
     height: 520px;
     width: 60%;
     background-color: #eaa903;
-    background-image: url("fondjaunelogo.png");  
+    background-image: url("../resources/fondjaunelogo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+#rentree_txt h1 {
+    padding-top: 0.4em;
+}
+
 #amphi {
-    background-image: url("amphi.jpg");
+    background-image: url("../resources/amphi.jpg");
     background-size: cover;
     width: 40%;
     height: 520px;
 }
 
 .candidatures {
-    height: 412px;
+    height: fit-content;
     background-color: white;
+    padding-bottom: 80px;
 }
 
 .diplomes {
-    height: 622px;
-    background-color:#eaa903;
+    height: fit-content;
+    background-color: #eaa903;
+    padding-bottom: 80px;
 }
 
 .actus {
-    height: 926px;
+    height: fit-content;
     background-color: white;
+    padding-bottom: 80px;
 }
 
 .chiffres {
-    height: 444px;
+    height: fit-content;
     background-color: #eaa903;
+    padding-bottom: 80px;
 }
 
 .footer {
@@ -264,25 +279,24 @@ ol, ul {
 }
 
 h1 {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3.5vw;
-    color: #f7f7f7;
+    font-size: 60px;
+    color: #f7f7f7!important;
     line-height: 1.3em;
     padding-left: 12%;
-    padding-top: 1vw;
 }
 
-.txt_1, .txt_2{
-    font-family: 'Montserrat',sans-serif;
-    font-size: 20px;
-    line-height: 1.8em;
+.txt_1,
+.txt_2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     margin-bottom: 15px!important;
     color: #353740;
-    padding-left: 8.5vw;
+    padding-left: 7vw;
     padding-right: 8vw;
-    padding-top: 1em;
+    padding-top: 0.7em;
     line-height: 30px;
 }
 
@@ -296,33 +310,31 @@ h1 {
 h3 {
     color: #555555;
     font-size: 22px;
-
     padding-top: 2.5em;
-    
 }
 
 .txt_4 {
-    font-family: 'Montserrat',sans-serif;
-    font-size:36px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
     color: white;
     text-align: center;
     padding-top: 3em;
 }
 
-.diplomes_icones a{
+.diplomes_icones a {
     text-decoration: none;
     color: white;
     font-size: 22px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-.diplomes_icones p{
+.diplomes_icones p {
     flex-wrap: wrap;
     flex-direction: row;
     color: white;
     font-size: 16px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 1em;
     font-weight: normal;
 }
@@ -334,16 +346,12 @@ h3 {
     justify-content: space-evenly;
 }
 
-.dut, .du, .licence, .master {
-    width: 15%;
-}
-
 .txt_5 {
-    font-family: 'Montserrat',sans-serif;
-    font-size:36px;
-    color:#747D88;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #747D88;
     text-align: center;
-    padding: 3.5em; 
+    padding: 3.5em;
 }
 
 h4 {
@@ -356,6 +364,10 @@ h4 {
 .bloc {
     display: flex;
     padding-top: 4.25em;
+}
+
+.icones {
+    display: none;
 }
 
 .articles {
@@ -380,17 +392,20 @@ h4 {
     padding: 19px;
     border: 1px solid #d8d8d8;
     width: 300px;
+    height: min-content;
 }
 
-#art2{
+#art2 {
     padding: 19px;
     width: 300px;
+    height: min-content;
 }
 
 #art3 {
     padding: 19px;
     border: 1px solid #d8d8d8;
     width: 300px;
+    height: min-content;
 }
 
 .iutchiffres {
@@ -402,15 +417,15 @@ h4 {
 }
 
 .acces {
-    padding-right:17%;
+    padding-right: 17%;
 }
 
 .paris {
-    padding-left:14%;
+    padding-left: 14%;
     padding-right: 14%;
 }
 
-.actus .lien_actu  {
+.actus a {
     text-decoration: none;
     color: #555555;
 }
@@ -424,7 +439,7 @@ h4 {
     border: 1px solid #d8d8d8;
 }
 
-.bloc2 img{
+.bloc2 img {
     width: fit-content;
 }
 
@@ -487,32 +502,40 @@ h4 {
 }
 
 .button_rounded {
-    transition:padding-right 0.3s, padding-left 0.3s;
+    transition: padding-right 0.3s, padding-left 0.3s;
     display: flex;
     padding-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 6px;
     border-radius: 100px;
-    width:max-content;
+    width: max-content;
     z-index: 1;
-    color: white;
+    margin-left: 33%;
+}
+
+.covid .button_rounded {
+    margin-top: 20px!important;
+}
+
+#rentree_txt .button_rounded {
     border: solid 2px white;
+    margin-left: 12%!important;
 }
 
 .button_rounded #label {
-    display:inline-block;
+    display: inline-block;
     /*background-color:yellow;*/
-    width:max-content;
-    font-size:16px;
+    width: max-content;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 
 .button_rounded #arrow {
-    transition:opacity 0.2s, margin-left 2s;
+    transition: opacity 0.2s, margin-left 2s;
     margin-left: 0px;
     opacity: 0;
-    width:min-content;
+    width: min-content;
 }
 
 .button_rounded:hover {
@@ -530,7 +553,6 @@ h4 {
 .candidatures .button_rounded {
     margin-left: calc(50vw - 135px);
     margin-top: 40px;
-
     border: solid 2px #eaa903;
     color: #eaa903;
 }
@@ -538,7 +560,6 @@ h4 {
 .actus .button_rounded {
     margin-left: calc(50vw - 155px);
     margin-top: 40px;
-
     color: #eaa903;
     border: solid 2px #eaa903;
 }
@@ -549,8 +570,17 @@ h4 {
 }
 
 .candidatures a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.rentree .button_rounded {
+    margin-left: 8.5vw;
+    left: 8em;
+    color: #fff;
+    border: solid 2px #fff;
 }
 
 .rentree a {
@@ -558,202 +588,14 @@ h4 {
     text-decoration: none;
 }
 
-.icones {
+.diplome {
+    width: 15%;
+}
+
+.diplomeMO {
     display: none;
 }
 
-
-/*MEDIA QUERIES RESPONSIVE*/
-@media (max-width: 980px) {
-    .footer{
-        height: 537px;
-    }
-    .bloc {
-      display: inline-block;  
-      flex-direction: column; 
-      padding-top: 1.75em;  
-    }
-    h4 {
-        padding-bottom: 10px;
-    }
-    .paris {
-        padding-left: 10%;
-    }
-    .acces {
-        padding-left: 10%;
-        padding-top: 1.5em;
-    }
-    .chiffres, .diplomes{
-        background-color: white;
-    }
-    .rentree {
-        background-color: white;
-    }
-    h1 {
-        font-size: 30px;
-        color:#555555;
-        padding-bottom: 10px;
-        padding-top: 0;
-        padding-left: 1em;
-        text-transform: capitalize;
-        font-weight: bolder;
-    }
-    .txt_1, .txt_2{
-        padding-left: 2.25em;
-        width: 90vw;
-        padding-right: 0px;
-        font-size: 14px;
-        padding-top: 0px;
-        margin-top: 12px !important;
-        margin-bottom: 12px !important;
-        line-height: 24px;
-        color:#666666 ;
-    }
-    .rentree #amphi{
-        display: none;
-    }
-    .rentree #rentree_txt{
-        background-color: white;
-        background-image: none;
-    }
-    .articles{
-        display: inline-block;
-        padding-left: 10%;
-    }
-    #art1, #art3{
-        width: 402px;
-    }
-    #art1, #art2{
-        margin-bottom: 3em;
-    }
-    .actus{
-        height: 1532px;
-    }
-    .chiffres{
-        height: 834px;
-    }
-    .chiffre {
-        color:black;
-        text-align: center;
-    }
-    .white_title{
-        color : black;
-    }
-    .chiffre_container{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .candidatures{
-        height: 500px;
-    }
-
-    .txt_3, .txt_4, .txt_5, .white_title {
-        font-size: 1.1em;
-        color: rgb(70, 70, 70);
-    }
-
-    .txt_4 {
-        color:#747D88;
-    }
-
-    .button_rounded {
-        transition:padding-right 0.3s, padding-left 0.3s;
-        display: flex;
-        padding-top: 12px;
-        padding-left: 18px;
-        padding-right: 18px;
-        padding-bottom: 8px;
-        border: solid 2px #cf0a2c;
-        border-radius: 3px;
-        width:max-content;
-        z-index: 1;
-    }
-    
-    .button_rounded #label {
-        display:inline-block;
-        width:max-content;
-        font-size:16px;
-        color: #cf0a2c;
-        letter-spacing: 2px;
-    }
-    
-    .button_rounded #arrow {
-        transition:opacity 0.2s, margin-left 2s;
-        margin-left: 0px;
-        opacity: 0;
-        font-size: 2em;
-        transform: translateY(-0.2em) scale(0.7, 1.4);
-        color: #cf0a2c;
-        width:min-content;
-    }
-    
-    .button_rounded:hover {
-        transition: padding-right 0.3s ease-in-out, padding-left 0.3s;
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: rgb(226, 226, 226);
-        border-color: rgb(226, 226, 226);
-    }
-    
-    .button_rounded:hover #arrow {
-        transition: opacity 0.2s, margin-left 0.3s;
-        margin-left: 5px;
-        opacity: 1;
-    }
-
-    .rentree .button_rounded {
-        margin-left: 7vw;
-    }
-
-    .candidatures .button_rounded {
-        margin-left: calc(50vw - 135px);
-        margin-top: 40px;
-    
-        border: solid 2px #cf0a2c;
-        color: #cf0a2c;
-    }
-    
-    .candidatures .button_rounded:hover {
-        background-color: rgb(226, 226, 226);
-        border-color: rgb(226, 226, 226);
-    }
-
-    .actus .button_rounded {
-        margin-left: calc(50vw - 155px);
-        margin-top: 40px;
-        
-        color: #cf0a2c;
-        border: solid 2px #cf0a2c;
-    }
-
-    .actus .button_rounded:hover {
-        background-color: rgb(226, 226, 226);
-        border-color: rgb(226, 226, 226);
-    }
-    
-    .actus .button_rounded a {
-        text-decoration: none;
-        color: #cf0a2c;
-    }
-
-    .topnav li{
-        display: none;
-    }
-
-    #top-header {
-        display: none;
-    }
-    .icones{
-        display : block
-    }
-
-    .iutparislogo {
-        padding-left: 10%;
-        padding-top: 10%;
-    }
-
-    .bloc {
-        padding-left: 7%;
-    }
-
+.diplomePC {
+    display: inline;
 }
