@@ -210,6 +210,7 @@ ol, ul {
 	
 }
 .rentree {
+    padding-top: 0px;
     display: flex;
 	height:500px;
 }
@@ -331,11 +332,19 @@ h3 {
 }
 
 .txt_4 {
-    font-family: 'Montserrat',sans-serif;
-    font-size:36px;
-    color: #666;
+    color: #747D88;
+    font-size: 12px;
     text-align: center;
     padding-top: 3em;
+}
+
+.diplomes_icones {
+    display: flex;
+    width: 100% !important;
+    text-align: center;
+    padding-top: 5.5%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .diplomes_icones a{
@@ -347,20 +356,11 @@ h3 {
 }
 
 .diplomes_icones p{
-    flex-wrap: wrap;
-    flex-direction: row;
     color: #666;
     font-size: 16px;
     font-family: 'Montserrat',sans-serif;
     padding-top: 1em;
     font-weight: normal;
-}
-
-.diplomes_icones {
-    display: flex;
-    text-align: center;
-    padding-top: 5.5%;
-    justify-content: space-evenly;
 }
 
 .dutMO, .duMO, .licenceMO, .masterMO {
@@ -371,15 +371,15 @@ h3 {
 }
 
 .dut, .du, .licence, .master {
-    width: 15%;
+    margin-top: 20px;
+    width: 100% !important;
 }
 
 .txt_5 {
-    font-family: 'Montserrat',sans-serif;
-    font-size:36px;
-    color:#747D88;
+    color: #747D88;
+    font-size: 12px;
     text-align: center;
-    padding: 3.5em; 
+    padding-top: 3em;
 }
 
 h4 {
@@ -520,12 +520,13 @@ h4 {
         border-radius: 3px;
         width:max-content;
         z-index: 1;
-		margin-left:33%!important;
 		margin-right:33%;
     }
+
     .covid .button_rounded{
-	margin-top: 0px!important;
-}
+	    margin-top: 0px!important;
+    }
+
     .button_rounded #label {
         display:inline-block;
         width:max-content;
@@ -563,16 +564,18 @@ h4 {
     }
 
     .candidatures .button_rounded {
-        margin-left: calc(50vw - 135px);
+        margin-left: calc(50vw - 195px);
         margin-top: 40px;
-    
         border: solid 2px #cf0a2c;
         color: #cf0a2c;
     }
+
     #rentree_txt .button_rounded  {
-		border: solid 2px #cf0a2c;
+        border: solid 2px #cf0a2c;
+        margin-bottom: 15px;
 		margin-left:0px!important;
-	}
+    }
+    
     .candidatures .button_rounded:hover {
         background-color: rgb(226, 226, 226);
         border-color: rgb(226, 226, 226);

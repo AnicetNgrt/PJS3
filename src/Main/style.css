@@ -280,13 +280,12 @@ h1 {
 
 .txt_1, .txt_2{
     font-family: 'Montserrat',sans-serif;
-    font-size: 20px;
-    line-height: 1.8em;
+    font-size: 18px;
     margin-bottom: 15px!important;
     color: #353740;
-    padding-left: 12%;
+    padding-left: 7vw;
     padding-right: 8vw;
-    padding-top: 1em;
+    padding-top: 0.7em;
     line-height: 30px;
 }
 
@@ -505,8 +504,8 @@ h4 {
 	margin-top: 20px!important;
 }
 #rentree_txt .button_rounded  {
-		border: solid 2px white;
-		margin-left:12%!important;
+    border: solid 2px white;
+    margin-left:12%!important;
 }
 .button_rounded #label {
     display:inline-block;
