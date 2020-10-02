@@ -3,12 +3,12 @@
     padding: 0px;
     font-family: 'Open Sans', Arial, sans-serif;
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    background:transparent;
-    font-size:100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 100%;
     vertical-align: baseline;
 }
 
@@ -36,24 +36,24 @@ nav ul li {
     width: 25%;
 }
 
-nav ul::after{
-    content:"";
+nav ul::after {
+    content: "";
     display: table;
     clear: both;
 }
 
-nav a{
+nav a {
     display: block;
     text-decoration: none;
     color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
-	white-space: nowrap;
+    white-space: nowrap;
     color: rgba(0, 0, 0, 0.6);
-	font-size: 16px;
+    font-size: 16px;
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
     border-bottom: 2px solid #cf0a2c;
 }
@@ -64,35 +64,36 @@ nav a:hover{
     background-color: white;
     position: absolute;
     z-index: 1000;
-	color: black;
+    color: black;
 }
 
-nav > ul li:hover .sous{
+nav>ul li:hover .sous {
     display: block;
 }
 
-.sous li{
+.sous li {
     float: none;
     width: 100%;
     text-align: left;
 }
 
-.sous a{
+.sous a {
     padding: 10px;
     border-bottom: none;
 }
 
-.sous a:hover{
+.sous a:hover {
     border-bottom: none;
     background-color: rgba(200, 200, 200, 0.1);
 }
 
-.deroulant > a::after{
-    content:" ▽";
+.deroulant>a::after {
+    content: " ▽";
     font-size: 12px;
 }
 
-.non-deroulant, .deroulant {
+.non-deroulant,
+.deroulant {
     margin-left: 30px;
 }
 
@@ -104,15 +105,15 @@ nav > ul li:hover .sous{
     padding-top: -5px;
 }
 
-.non-deroulant > a:hover{
+.non-deroulant>a:hover {
     border-bottom: none;
 }
 
 body {
-    color:#666;
+    color: #666;
     background-color: #fff;
     font-family: "Open Sans", Arial, sans-serif;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.7em;
 }
@@ -121,22 +122,23 @@ ul {
     display: block;
 }
 
-#top-header{
-    z-index:100000;
-    color:#fff;
+#top-header {
+    z-index: 100000;
+    color: #fff;
     font-size: 12px;
     line-height: 13px;
     z-index: 10;
 }
 
 .et_fixed_nav #top-header {
-    top:0;
-    right:0;
-    left:0;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 40px;
 }
 
-#top-header, #second-menu li ul {
+#top-header,
+#second-menu li ul {
     background-color: #cf0a2c;
 }
 
@@ -154,21 +156,25 @@ ul {
     float: none;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-#top-header, #top-header .container, #top-header .social-icons a {
+#top-header,
+#top-header .container,
+#top-header .social-icons a {
     line-height: 1em;
 }
 
-#top-header, .container {
+#top-header,
+.container {
     padding-top: 0.4em;
     font-weight: 600;
 }
 
 .container {
-    position:relative;
+    position: relative;
     width: 80%;
     max-width: 1080px;
     margin: auto;
@@ -179,7 +185,7 @@ ol, ul {
     font-size: 14px;
 }
 
-#second-menu > ul > li a {
+#second-menu>ul>li a {
     display: block;
     padding-bottom: 0.75em;
     text-decoration: none;
@@ -195,14 +201,15 @@ ol, ul {
     display: inline-block;
 }
 
-#second-nav, #second-nav li{
+#second-nav,
+#second-nav li {
     display: inline-block;
 }
 
 #second-nav li {
     position: relative;
     text-align: right;
-	margin-right: 15px;
+    margin-right: 15px;
 }
 
 .rentree {
@@ -213,18 +220,18 @@ ol, ul {
     height: 520px;
     width: 60%;
     background-color: #eaa903;
-    background-image: url("fondjaunelogo.png");  
+    background-image: url("../resources/fondjaunelogo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#rentree_txt h1{
+#rentree_txt h1 {
     padding-top: 0.4em;
 }
 
 #amphi {
-    background-image: url("amphi.jpg");
+    background-image: url("../resources/amphi.jpg");
     background-size: cover;
     width: 40%;
     height: 520px;
@@ -238,7 +245,7 @@ ol, ul {
 
 .diplomes {
     height: fit-content;
-    background-color:#eaa903;
+    background-color: #eaa903;
     padding-bottom: 80px;
 }
 
@@ -251,7 +258,7 @@ ol, ul {
 .chiffres {
     height: fit-content;
     background-color: #eaa903;
-	padding-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 .footer {
@@ -272,7 +279,7 @@ ol, ul {
 }
 
 h1 {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 60px;
@@ -281,8 +288,9 @@ h1 {
     padding-left: 12%;
 }
 
-.txt_1, .txt_2{
-    font-family: 'Montserrat',sans-serif;
+.txt_1,
+.txt_2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin-bottom: 15px!important;
     color: #353740;
@@ -302,33 +310,31 @@ h1 {
 h3 {
     color: #555555;
     font-size: 22px;
-
     padding-top: 2.5em;
-    
 }
 
 .txt_4 {
-    font-family: 'Montserrat',sans-serif;
-    font-size:36px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
     color: white;
     text-align: center;
     padding-top: 3em;
 }
 
-.diplomes_icones a{
+.diplomes_icones a {
     text-decoration: none;
     color: white;
     font-size: 22px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-.diplomes_icones p{
+.diplomes_icones p {
     flex-wrap: wrap;
     flex-direction: row;
     color: white;
     font-size: 16px;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 1em;
     font-weight: normal;
 }
@@ -340,13 +346,12 @@ h3 {
     justify-content: space-evenly;
 }
 
-
 .txt_5 {
-    font-family: 'Montserrat',sans-serif;
-    font-size:36px;
-    color:#747D88;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #747D88;
     text-align: center;
-    padding: 3.5em; 
+    padding: 3.5em;
 }
 
 h4 {
@@ -360,9 +365,11 @@ h4 {
     display: flex;
     padding-top: 4.25em;
 }
+
 .icones {
-	display:none;
+    display: none;
 }
+
 .articles {
     display: flex;
     padding-left: 5%;
@@ -385,17 +392,20 @@ h4 {
     padding: 19px;
     border: 1px solid #d8d8d8;
     width: 300px;
+    height: min-content;
 }
 
-#art2{
+#art2 {
     padding: 19px;
     width: 300px;
+    height: min-content;
 }
 
 #art3 {
     padding: 19px;
     border: 1px solid #d8d8d8;
     width: 300px;
+    height: min-content;
 }
 
 .iutchiffres {
@@ -407,15 +417,15 @@ h4 {
 }
 
 .acces {
-    padding-right:17%;
+    padding-right: 17%;
 }
 
 .paris {
-    padding-left:14%;
+    padding-left: 14%;
     padding-right: 14%;
 }
 
-.actus a  {
+.actus a {
     text-decoration: none;
     color: #555555;
 }
@@ -429,7 +439,7 @@ h4 {
     border: 1px solid #d8d8d8;
 }
 
-.bloc2 img{
+.bloc2 img {
     width: fit-content;
 }
 
@@ -492,37 +502,40 @@ h4 {
 }
 
 .button_rounded {
-    transition:padding-right 0.3s, padding-left 0.3s;
+    transition: padding-right 0.3s, padding-left 0.3s;
     display: flex;
     padding-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 6px;
     border-radius: 100px;
-    width:max-content;
+    width: max-content;
     z-index: 1;
-	margin-left: 33%;
+    margin-left: 33%;
 }
+
 .covid .button_rounded {
-	margin-top: 20px!important;
+    margin-top: 20px!important;
 }
-#rentree_txt .button_rounded  {
+
+#rentree_txt .button_rounded {
     border: solid 2px white;
-    margin-left:12%!important;
+    margin-left: 12%!important;
 }
+
 .button_rounded #label {
-    display:inline-block;
+    display: inline-block;
     /*background-color:yellow;*/
-    width:max-content;
-    font-size:16px;
+    width: max-content;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 
 .button_rounded #arrow {
-    transition:opacity 0.2s, margin-left 2s;
+    transition: opacity 0.2s, margin-left 2s;
     margin-left: 0px;
     opacity: 0;
-    width:min-content;
+    width: min-content;
 }
 
 .button_rounded:hover {
@@ -540,7 +553,6 @@ h4 {
 .candidatures .button_rounded {
     margin-left: calc(50vw - 135px);
     margin-top: 40px;
-
     border: solid 2px #eaa903;
     color: #eaa903;
 }
@@ -548,7 +560,6 @@ h4 {
 .actus .button_rounded {
     margin-left: calc(50vw - 155px);
     margin-top: 40px;
-
     color: #eaa903;
     border: solid 2px #eaa903;
 }
@@ -559,8 +570,10 @@ h4 {
 }
 
 .candidatures a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
 }
 
 .rentree .button_rounded {
@@ -574,7 +587,6 @@ h4 {
     color: inherit;
     text-decoration: none;
 }
-
 
 .diplome {
     width: 15%;
