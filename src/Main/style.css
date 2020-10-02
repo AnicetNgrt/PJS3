@@ -231,24 +231,27 @@ ol, ul {
 }
 
 .candidatures {
-    height: 412px;
+    height: fit-content;
     background-color: white;
+    padding-bottom: 80px;
 }
 
 .diplomes {
-    height: 622px;
+    height: fit-content;
     background-color:#eaa903;
+    padding-bottom: 80px;
 }
 
 .actus {
-    height: 926px;
+    height: fit-content;
     background-color: white;
+    padding-bottom: 80px;
 }
 
 .chiffres {
-    box-sizing: border-box;
+    height: fit-content;
     background-color: #eaa903;
-	
+	padding-bottom: 80px;
 }
 
 .footer {
@@ -573,14 +576,14 @@ h4 {
 }
 
 
-.dut, .du, .licence, .master {
+.diplome {
     width: 15%;
 }
 
-.dutMO, .duMO, .licenceMO, .masterMO {
+.diplomeMO {
     display: none;
 }
 
-.dutPC, .duPC, .licencePC, .masterPC {
+.diplomePC {
     display: inline;
 }
